@@ -9,7 +9,7 @@ import prohvataeva.springboot_conditionalapp.module.SystemProfile;
 
 @Configuration
 public class JavaConfig {
-    
+
     @ConditionalOnProperty(prefix = "netology.profile", name = "dev", havingValue = "false")
     @Bean
     public SystemProfile devProfile() {
